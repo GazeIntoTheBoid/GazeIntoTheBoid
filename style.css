@@ -1,7 +1,37 @@
 body{
+    background-color: #D7CCC8;
     font-family:  Helvetica, Arial, sans-serif;
 }
 .intro{
     text-align: center;
     
+}
+h1{
+    font-size: 72pt;
+    margin : auto;
+    
+}
+section{
+    max-width: 1200px;
+    margin: auto;
+}
+.flex-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200;
+
+}
+.artcrop{
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+}
+figcaption{
+    max-width: 500px;
+    
+}
+figure{
+    display :flex ;
+    flex-direction: column;
 }
