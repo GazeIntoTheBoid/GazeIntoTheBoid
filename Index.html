@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Test Website</title> <meta charset="UTF-8">
+        <title>Art page</title> <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <section class = "intro">
-            <h1>Art Gallery</h1>
-            <p>A selection of crafts and artwork I have produced over the years.</p>
-            <br>
+        <div class = "modal" id = "viewPictureModal" >
+            
+            <img class = "modal-img" id = "full-image">
+            <div class =  "closebox"><p class="close" onclick="closeModal()">&times;</p></div> <!-- this is the x button and connects it to a close script -->
+        </div>
+        <section class="intro">
+            <div class="linkMenu">
+                <a Class="linkButton" href="https://www.instagram.com/">Insta</a>
+                <a Class="linkButton" href="dog.html">Dog</a>
+                <a Class="linkButton" href="Index.html">Art</a>
+
+            </div>
+            <div class = introHeader>
+                <h1>Art Gallery</h1>
+                <p><strong> A selection of crafts and artwork I have produced over the years. Click the thumbnails for the full images.</strong></p>
+            </div>
         </section>
         <section>
             <h2>Oil Paint</h2>
@@ -19,43 +31,48 @@
                 </figure>
                 <figure>
                     <img class = "artcrop" src="landscapeOil.jpg" alt = "Canal landscape in oil ">
-                    <figcaption>Painted from a photo taken along the leeds liverpool canal near chorley</figcaption>
+                    <figcaption>Painted from a photo taken along the leeds liverpool canal near chorley.</figcaption>
                 </figure>
                 <figure>
                     <img class = "artcrop" src="BertyOil.jpg" alt = "A terrier called berty painted in oil">
-                    <figcaption>Berty posed well at wast water, painted using palette knives</figcaption>
+                    <figcaption>Berty at wast water, painted using palette knives.</figcaption>
                 </figure>
             
             </div>
-
-
+        </section>
+        <section>
             <h2>Lino Print</h2>
             <div class="flex-box">
                 <figure>
                   <img class = "artcrop" src="blackspiderLino.png" alt = "Black spider lino printed wanted poster for D&D">
-                  <figcaption>A wanted poster created as a prop for a long running dungeons and dragons game. The black spider was the primary antagonist of the players</figcaption>
+                  <figcaption>A wanted poster. This was created as a prop for a long running dungeons and dragons game.</figcaption>
                 </figure>
                 <figure>
                     <img class = "artcrop" src="llamaLino.jpg" alt = "Llama / sherlock lino print">
-                    <figcaption>Made in exchange for cookies</figcaption>
+                    <figcaption>Made in exchange for cookies.</figcaption>
                 </figure>
             
             </div>
+        </section>
+        <section>
             <h2>Ceramics</h2>
+            <p>I cant find any photos :(</p>
+        </section>
+        <section>
             <h2>Water colour</h2>
-            
             <div class="flex-box">
                 <figure>
                   <img class = "artcrop" src="DornAndTheBasiliskLino.jpg" alt = "Dorn bearcroft slaying a basilisk in watercolour">
-                  <figcaption>An attempt to copy the style of illustrations in illuminated manuscripts. The piece celebrates the narrowest of victories over the basilisk encountered in the lair of ras nsi</figcaption>
+                  <figcaption>An attempt to copy the style of illustrations in illuminated manuscripts. The piece celebrates the narrowest of victories over the basilisk encountered in the lair of Ras Nsi.</figcaption>
                 </figure>
                 <figure>
                     <img class = "artcrop" src="houseWC.jpg" alt = "A painting of a farmhouse front in watercolour">
-                    <figcaption>The front of a farm building painted from life. I stayed here during a WWOOF near the dordogne france</figcaption>
+                    <figcaption>The front of a farm building painted from life. I stayed here during a WWOOF near the dordogne france.</figcaption>
                 </figure>
             
             </div>
 
         </section>
+        <script src = "scripts.js"></script>
     </body>
 </html>
